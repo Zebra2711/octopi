@@ -1840,7 +1840,8 @@ void MainWindow::clearTabsInfoOrFiles()
   }
   else if(ui->twProperties->currentIndex() == ctn_TABINDEX_FILES) //This is TabFiles
   {
-    refreshTabFiles(); //(true, false);
+    // Don't refresh on first start so just comment this line
+    //refreshTabFiles(); //(true, false);
     return;
   }
 
